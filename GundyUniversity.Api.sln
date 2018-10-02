@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GundyUniversity.Api", "GundyUniversity.Api\GundyUniversity.Api.csproj", "{A1AECE9C-C7A8-4FC6-B453-A974B4F3BC62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GundyUniversity.Api", "GundyUniversity.Api\GundyUniversity.Api.csproj", "{A1AECE9C-C7A8-4FC6-B453-A974B4F3BC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GundyUniversity.Data", "GundyUniversity.Data\GundyUniversity.Data.csproj", "{76D2F7DF-9F64-4A2F-B709-F5CA90B450EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A1AECE9C-C7A8-4FC6-B453-A974B4F3BC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1AECE9C-C7A8-4FC6-B453-A974B4F3BC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1AECE9C-C7A8-4FC6-B453-A974B4F3BC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D2F7DF-9F64-4A2F-B709-F5CA90B450EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D2F7DF-9F64-4A2F-B709-F5CA90B450EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D2F7DF-9F64-4A2F-B709-F5CA90B450EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D2F7DF-9F64-4A2F-B709-F5CA90B450EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
