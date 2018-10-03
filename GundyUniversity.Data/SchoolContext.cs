@@ -1,6 +1,7 @@
 ﻿using GundyUniversity.Data.EntityModels;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace GundyUniversity.Data
 {
     public class SchoolContext : DbContext
