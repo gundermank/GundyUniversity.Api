@@ -45,7 +45,7 @@ namespace GundyUniversity.Data
             };
             foreach (Course c in courses)
             {
-                context.Courses.Add(c);
+                context.Set<Course>().Add(c);
             }
             context.SaveChanges();
 
@@ -66,7 +66,7 @@ namespace GundyUniversity.Data
             };
             foreach (Enrollment e in enrollments)
             {
-                context.Enrollments.Add(e);
+                context.Set<Enrollment>().Add(e);
             }
             context.SaveChanges();
         }
