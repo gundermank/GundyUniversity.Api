@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GundyUniversity.Data;
 using GundyUniversity.Data.EntityModels;
+using Newtonsoft.Json;
 
 namespace GundyUniversity.Api.Controllers
 {
@@ -37,12 +38,18 @@ namespace GundyUniversity.Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            var student = await _context.Students.FindAsync(id);
+            var student = await _context.Students
+                .Include(s => s.Enrollments)
+                .ThenInclude(e => e.Course)
+                .AsNoTracking()
+                .SingleOrDefaultAsync(m => m.ID == id);
+           
 
             if (student == null)
             {
                 return NotFound();
             }
+
 
             return Ok(student);
         }
